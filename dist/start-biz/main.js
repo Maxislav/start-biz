@@ -219,7 +219,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <form #postForm=\"ngForm\">\n    <div ngModelGroup=\"name\">\n      <input type=\"text\" name=\"title\" [(ngModel)]=\"model.title\" required #title=\"ngModel\">\n    </div>\n    <div ngModelGroup=\"body\" >\n      <input type=\"text\" name=\"body\" [(ngModel)]=\"model.body\" required #body=\"ngModel\">\n    </div>\n\n  </form>\n  <button (click)=\"onSubmit()\">\n    Send\n  </button>\n</div>"
+module.exports = "<div>\n    <form #postForm=\"ngForm\">\n        <div ngModelGroup=\"name\">\n            <label>Title</label>\n            <input type=\"text\" name=\"title\" [(ngModel)]=\"model.title\" required #title=\"ngModel\">\n        </div>\n        <div ngModelGroup=\"body\">\n            <label>Body</label>\n            <input type=\"text\" name=\"body\" [(ngModel)]=\"model.body\" required #body=\"ngModel\">\n        </div>\n\n    </form>\n    <button (click)=\"onSubmit()\">\n        Send\n    </button>\n</div>"
 
 /***/ }),
 
@@ -230,7 +230,7 @@ module.exports = "<div>\n  <form #postForm=\"ngForm\">\n    <div ngModelGroup=\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ":host {\n  display: block;\n  padding: 25px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcG9zdC1jcmVhdGUvRTovUHJvamVjdHMvc3RhcnQtYml6L3NyYy9hcHAvcG9zdC1jcmVhdGUvcG9zdC1jcmVhdGUuY29tcG9uZW50Lmxlc3MiLCJzcmMvYXBwL3Bvc3QtY3JlYXRlL3Bvc3QtY3JlYXRlLmNvbXBvbmVudC5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksY0FBQTtFQUNBLGFBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL3Bvc3QtY3JlYXRlL3Bvc3QtY3JlYXRlLmNvbXBvbmVudC5sZXNzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3R7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgcGFkZGluZzogMjVweDtcblxufVxuIiwiOmhvc3Qge1xuICBkaXNwbGF5OiBibG9jaztcbiAgcGFkZGluZzogMjVweDtcbn1cbiJdfQ== */"
+module.exports = ":host {\n  display: block;\n  padding: 25px;\n  width: 50%;\n  height: 100%;\n}\n:host > div {\n  padding: 15px;\n  box-shadow: 0 2px 5px black;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcG9zdC1jcmVhdGUvRTovUHJvamVjdHMvc3RhcnQtYml6L3NyYy9hcHAvcG9zdC1jcmVhdGUvcG9zdC1jcmVhdGUuY29tcG9uZW50Lmxlc3MiLCJzcmMvYXBwL3Bvc3QtY3JlYXRlL3Bvc3QtY3JlYXRlLmNvbXBvbmVudC5sZXNzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksY0FBQTtFQUNBLGFBQUE7RUFDQSxVQUFBO0VBQ0EsWUFBQTtBQ0NKO0FEQUk7RUFDSSxhQUFBO0VBQ0EsMkJBQUE7QUNFUiIsImZpbGUiOiJzcmMvYXBwL3Bvc3QtY3JlYXRlL3Bvc3QtY3JlYXRlLmNvbXBvbmVudC5sZXNzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3R7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgcGFkZGluZzogMjVweDtcbiAgICB3aWR0aDogNTAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICAmPmRpdntcbiAgICAgICAgcGFkZGluZzogMTVweDtcbiAgICAgICAgYm94LXNoYWRvdzogMCAycHggNXB4IGJsYWNrO1xuICAgIH1cbn1cbiIsIjpob3N0IHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBhZGRpbmc6IDI1cHg7XG4gIHdpZHRoOiA1MCU7XG4gIGhlaWdodDogMTAwJTtcbn1cbjpob3N0ID4gZGl2IHtcbiAgcGFkZGluZzogMTVweDtcbiAgYm94LXNoYWRvdzogMCAycHggNXB4IGJsYWNrO1xufVxuIl19 */"
 
 /***/ }),
 
@@ -286,7 +286,7 @@ var PostCreateComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n    <div *ngFor=\"let item of postList\" (click)=\"onSelect(item)\" class=\"pointer\">\n        {{item.title}} dddd\n    </div>\n</div>\n\n"
+module.exports = "<div>\n    <div *ngFor=\"let item of postList\" (click)=\"onSelect(item)\" class=\"pointer\">\n       {{item.title}}\n    </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -297,7 +297,7 @@ module.exports = "<div>\n    <div *ngFor=\"let item of postList\" (click)=\"onSe
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ":host {\n  display: block;\n  padding: 25px;\n}\n.pointer {\n  cursor: pointer;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcG9zdC1saXN0L0U6L1Byb2plY3RzL3N0YXJ0LWJpei9zcmMvYXBwL3Bvc3QtbGlzdC9wb3N0LWxpc3QuY29tcG9uZW50Lmxlc3MiLCJzcmMvYXBwL3Bvc3QtbGlzdC9wb3N0LWxpc3QuY29tcG9uZW50Lmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxjQUFBO0VBQ0QsYUFBQTtBQ0NIO0FERUE7RUFDSSxlQUFBO0FDQUoiLCJmaWxlIjoic3JjL2FwcC9wb3N0LWxpc3QvcG9zdC1saXN0LmNvbXBvbmVudC5sZXNzIiwic291cmNlc0NvbnRlbnQiOlsiOmhvc3Qge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgcGFkZGluZzogMjVweDtcbn1cblxuLnBvaW50ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbiIsIjpob3N0IHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBhZGRpbmc6IDI1cHg7XG59XG4ucG9pbnRlciB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbiJdfQ== */"
+module.exports = ":host {\n  display: block;\n  padding: 25px;\n}\n:host > div {\n  padding: 15px;\n  box-shadow: 0 2px 5px black;\n}\n.pointer {\n  cursor: pointer;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcG9zdC1saXN0L0U6L1Byb2plY3RzL3N0YXJ0LWJpei9zcmMvYXBwL3Bvc3QtbGlzdC9wb3N0LWxpc3QuY29tcG9uZW50Lmxlc3MiLCJzcmMvYXBwL3Bvc3QtbGlzdC9wb3N0LWxpc3QuY29tcG9uZW50Lmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxjQUFBO0VBQ0QsYUFBQTtBQ0NIO0FEQUk7RUFDSSxhQUFBO0VBQ0EsMkJBQUE7QUNFUjtBREVBO0VBQ0ksZUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9hcHAvcG9zdC1saXN0L3Bvc3QtbGlzdC5jb21wb25lbnQubGVzcyIsInNvdXJjZXNDb250ZW50IjpbIjpob3N0IHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgIHBhZGRpbmc6IDI1cHg7XG4gICAgJj5kaXZ7XG4gICAgICAgIHBhZGRpbmc6IDE1cHg7XG4gICAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDVweCBibGFjaztcbiAgICB9XG59XG5cbi5wb2ludGVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4iLCI6aG9zdCB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBwYWRkaW5nOiAyNXB4O1xufVxuOmhvc3QgPiBkaXYge1xuICBwYWRkaW5nOiAxNXB4O1xuICBib3gtc2hhZG93OiAwIDJweCA1cHggYmxhY2s7XG59XG4ucG9pbnRlciB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -349,7 +349,7 @@ var PostListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <p>\n    {{selected.title}}\n  </p>\n  <p>\n    {{selected.body}}\n  </p>\n</div>\n\n\n"
+module.exports = "<div>\n  <p>\n    Title: {{selected.title}}\n  </p>\n  <p>\n   Body: {{selected.body}}\n  </p>\n</div>\n\n\n"
 
 /***/ }),
 
@@ -360,7 +360,7 @@ module.exports = "<div>\n  <p>\n    {{selected.title}}\n  </p>\n  <p>\n    {{sel
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ":host {\n  display: block;\n  padding: 25px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcG9zdC1zZWxlY3RlZC9FOi9Qcm9qZWN0cy9zdGFydC1iaXovc3JjL2FwcC9wb3N0LXNlbGVjdGVkL3Bvc3Qtc2VsZWN0ZWQuY29tcG9uZW50Lmxlc3MiLCJzcmMvYXBwL3Bvc3Qtc2VsZWN0ZWQvcG9zdC1zZWxlY3RlZC5jb21wb25lbnQubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGNBQUE7RUFDQSxhQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9wb3N0LXNlbGVjdGVkL3Bvc3Qtc2VsZWN0ZWQuY29tcG9uZW50Lmxlc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBwYWRkaW5nOiAyNXB4O1xufVxuIiwiOmhvc3Qge1xuICBkaXNwbGF5OiBibG9jaztcbiAgcGFkZGluZzogMjVweDtcbn1cbiJdfQ== */"
+module.exports = ":host {\n  display: block;\n  padding: 25px;\n  width: 50%;\n  height: 100%;\n}\n:host > div {\n  padding: 15px;\n  box-shadow: 0 2px 5px black;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcG9zdC1zZWxlY3RlZC9FOi9Qcm9qZWN0cy9zdGFydC1iaXovc3JjL2FwcC9wb3N0LXNlbGVjdGVkL3Bvc3Qtc2VsZWN0ZWQuY29tcG9uZW50Lmxlc3MiLCJzcmMvYXBwL3Bvc3Qtc2VsZWN0ZWQvcG9zdC1zZWxlY3RlZC5jb21wb25lbnQubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGNBQUE7RUFDQSxhQUFBO0VBQ0EsVUFBQTtFQUNBLFlBQUE7QUNDSjtBREFJO0VBQ0ksYUFBQTtFQUNBLDJCQUFBO0FDRVIiLCJmaWxlIjoic3JjL2FwcC9wb3N0LXNlbGVjdGVkL3Bvc3Qtc2VsZWN0ZWQuY29tcG9uZW50Lmxlc3MiLCJzb3VyY2VzQ29udGVudCI6WyI6aG9zdHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBwYWRkaW5nOiAyNXB4O1xuICAgIHdpZHRoOiA1MCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgICY+ZGl2e1xuICAgICAgICBwYWRkaW5nOiAxNXB4O1xuICAgICAgICBib3gtc2hhZG93OiAwIDJweCA1cHggYmxhY2s7XG4gICAgfVxufVxuIiwiOmhvc3Qge1xuICBkaXNwbGF5OiBibG9jaztcbiAgcGFkZGluZzogMjVweDtcbiAgd2lkdGg6IDUwJTtcbiAgaGVpZ2h0OiAxMDAlO1xufVxuOmhvc3QgPiBkaXYge1xuICBwYWRkaW5nOiAxNXB4O1xuICBib3gtc2hhZG93OiAwIDJweCA1cHggYmxhY2s7XG59XG4iXX0= */"
 
 /***/ }),
 
