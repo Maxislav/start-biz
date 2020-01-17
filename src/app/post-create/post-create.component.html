@@ -1,14 +1,16 @@
 <div>
-  <form #postForm="ngForm">
-    <div ngModelGroup="name">
-      <input type="text" name="title" [(ngModel)]="model.title" required #title="ngModel">
-    </div>
-    <div ngModelGroup="body" >
-      <input type="text" name="body" [(ngModel)]="model.body" required #body="ngModel">
-    </div>
+    <form #postForm="ngForm">
+        <div ngModelGroup="name">
+            <label>Title</label>
+            <input type="text" name="title" [(ngModel)]="model.title" required #title="ngModel">
+        </div>
+        <div ngModelGroup="body">
+            <label>Body</label>
+            <input type="text" name="body" [(ngModel)]="model.body" required #body="ngModel">
+        </div>
 
-  </form>
-  <button (click)="onSubmit()">
-    Send
-  </button>
+    </form>
+    <button (click)="onSubmit()">
+        Send
+    </button>
 </div>
