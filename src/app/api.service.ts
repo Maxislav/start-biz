@@ -14,9 +14,7 @@ export interface PostItem {
     providedIn: 'root'
 })
 export class ApiService {
-
     postList: Array<PostItem> = [];
-
     selectedPost: PostItem = {
         id: null,
         title: null,
@@ -55,7 +53,6 @@ export class ApiService {
     getList(): Observable<Array<PostItem>> {
         return this.http.get<Array<PostItem>>('https://mighty-meadow-71062.herokuapp.com/posts');
     }
-
 
     setSelected(postItem: PostItem): void {
         this.selectedPost = postItem;
